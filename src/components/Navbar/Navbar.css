@@ -22,9 +22,11 @@ nav {
   align-items: center;
   list-style: none;
   color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-.nav__links li a:hover {
-  color: aqua;
+a:hover {
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   .nav__links {
@@ -97,4 +99,8 @@ a {
     color: #fff;
     padding: 50px 30px;
   }
+}
+
+.mobile__icon:hover {
+  color: black;
 }
