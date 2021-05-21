@@ -1,20 +1,23 @@
 nav {
-  height: 150px;
+  height: 80px;
   width: 100%;
-  background-color: black;
-  color: white;
   display: flex;
   justify-content: center;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  margin-top: -80px;
 }
 
-.navbar__image {
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../images/navbar-img.jpg");
-  background-position: center;
+.navbar {
+  background-color: transparent;
 }
 
-.nav__links {
+.navbar.colorChange {
+  background-color: #000;
+}
+
+.nav-links {
   max-width: 1000px;
   display: flex;
   padding-left: 2rem;
@@ -26,10 +29,10 @@ nav {
   font-weight: 500;
 }
 a:hover {
-  color: #000;
+  text-shadow: 0 0 2px #fff;
 }
 @media screen and (max-width: 768px) {
-  .nav__links {
+  .nav-links {
     display: none;
   }
 }
@@ -45,8 +48,8 @@ a {
 .nav--menu {
   display: flex;
   align-items: center;
-  padding-top: 80px;
-  color: white;
+
+  color: #000;
   justify-content: center;
   list-style: none;
 }
@@ -65,42 +68,40 @@ a {
     line-height: 50px;
     width: 100%;
     height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../images/navbar-img.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #000;
     position: absolute;
     margin: 0px;
     padding: 0px;
     border: none;
     transition: 0.3s ease-in-out;
-    top: 150px;
+    top: 0px;
+    z-index: 998;
   }
 }
 
-.nav__links--mobile {
-  color: white;
+.nav-links--mobile {
+  color: #fff;
   font-size: 1.5rem;
 }
 
-.mobile__icon {
+.mobile-icon {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .mobile__icon {
+  .mobile-icon {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     color: #fff;
-    padding: 50px 30px;
+    padding: 24px 24px;
+    z-index: 999;
   }
 }
 
-.mobile__icon:hover {
-  color: black;
+.mobile-icon:hover {
+  color: #808080;
 }

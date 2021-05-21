@@ -1,0 +1,14 @@
+.background__container {
+  height: 940px;
+  width: 100%;
+  display: flex;
+}
+
+.background__image {
+  width: 100%;
+  background-image: url("../../images/HeroImg.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: brightness(70%);
+  z-index: 1;
+}
