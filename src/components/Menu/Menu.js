@@ -7,49 +7,25 @@ const Menu = () => {
   const handlePrice = () => setPrice(!price);
 
   const data = Data.map((d, i) => (
-    <tr key={i} className={i % 2 == 0 ? "menu__tr--color" : ""}>
-      <td className="menu__td" key={d.nr}>
-        {d.nr}
-      </td>
-      <td className="menu__td" key={d.name}>
-        {d.name}
-      </td>
-      <td className="menu__td" key={d.ingredients}>
-        {d.ingredients}
-      </td>
-      <td className="menu__td" key={d.thirty}>
-        {price ? d.thirty : d.fourty}
-      </td>
-    </tr>
+    <ul className="menu__list">
+      <li key={d.nr}>
+        <div className="pizza__name">{d.name}</div>
+        <div className="pizza__ingredients">{d.ingredients}</div>
+        <div className="pizza__thirty">30cm {d.thirty} </div>
+        <div className="pizza__fourty">40cm - {d.fourty}</div>
+      </li>
+    </ul>
   ));
 
   return (
-    <div className="menu__container">
-      <div className="button__wrapper"></div>
-      <div className="menu__wrapper">
-        <table className="menu__table">
-          <tbody>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th style={{ border: "none" }}>
-                <button className="menu__size--button" onClick={handlePrice}>
-                  Zmień rozmiar
-                </button>
-              </th>
-            </tr>
-            <tr>
-              <th>Nr</th>
-              <th>Nazwa</th>
-              <th>Składniki</th>
-              <th>{price ? "30cm" : "40cm"}</th>
-            </tr>
-            {data}
-          </tbody>
-        </table>
+    <>
+      <div className="menu__container">
+        <div className="menu__wrapper">
+          <div className="menu__title">MENU</div>
+          {data}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
