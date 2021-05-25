@@ -1,0 +1,51 @@
+tr,
+th,
+td {
+  border: solid 1px;
+}
+table {
+  empty-cells: hide;
+}
+
+th:empty {
+  visibility: hidden;
+}
+.menu__container {
+  background: #fff;
+  height: 860px;
+  width: 100%;
+  color: #000;
+  position: relative;
+}
+
+.menu__wrapper {
+  padding: 40px 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu__table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+}
+
+.menu__td {
+  height: 60px;
+  padding: 0px 8px;
+  max-width: 600px;
+}
+
+.menu__size--button {
+  background: #242424;
+  border: 0px;
+  width: 8rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 2px;
+}
+
+.button__wrapper {
+}
