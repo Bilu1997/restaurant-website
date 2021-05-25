@@ -14,7 +14,7 @@ const Hero = () => {
             MENU
           </button>
         </div>
-        <img className="background__image" />
+        <img className="background__image" alt="HeroImg" />
       </div>
     </>
   );

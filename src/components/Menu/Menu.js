@@ -6,8 +6,8 @@ const Menu = () => {
   const [price, setPrice] = useState(true);
   const handlePrice = () => setPrice(!price);
 
-  const data = Data.map((d) => (
-    <tr>
+  const data = Data.map((d, i) => (
+    <tr key={i}>
       <td className="menu__td" key={d.nr}>
         {d.nr}
       </td>
@@ -28,24 +28,26 @@ const Menu = () => {
       <div className="button__wrapper"></div>
       <div className="menu__wrapper">
         <table className="menu__table">
-          <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>
-              {" "}
-              <button className="menu__size--button" onClick={handlePrice}>
-                30cm/40cm
-              </button>
-            </th>
-          </tr>
-          <tr>
-            <th>Nr</th>
-            <th>Nazwa</th>
-            <th>Składniki</th>
-            <th>{price ? "30cm" : "40cm"}</th>
-          </tr>
-          {data}
+          <tbody>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>
+                {" "}
+                <button className="menu__size--button" onClick={handlePrice}>
+                  30cm/40cm
+                </button>
+              </th>
+            </tr>
+            <tr>
+              <th>Nr</th>
+              <th>Nazwa</th>
+              <th>Składniki</th>
+              <th>{price ? "30cm" : "40cm"}</th>
+            </tr>
+            {data}
+          </tbody>
         </table>
       </div>
     </div>

@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -23,6 +22,7 @@ const Navbar = () => {
         <div className="logo__container">
           <img
             src={require("../../images/logo.png").default}
+            alt="logo"
             className="nav__logo"
           />
         </div>

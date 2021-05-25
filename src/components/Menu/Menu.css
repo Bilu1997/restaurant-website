@@ -28,21 +28,25 @@ th:empty {
   border-collapse: collapse;
   text-align: center;
   margin: auto;
+  width: 75%;
+}
+
+.menu__table {
+  width: 280px;
 }
 
 .menu__td {
-  height: 60px;
+  max-height: 600px;
   padding: 0px 8px;
-  max-width: 600px;
 }
 
 .menu__size--button {
   background: #242424;
   border: 0px;
-  width: 8rem;
-  height: 3rem;
+  width: 5rem;
+  height: 2rem;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-family: "Big Shoulders Display", cursive;
   letter-spacing: 2px;
 }
