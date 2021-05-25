@@ -7,7 +7,7 @@ const Menu = () => {
   const handlePrice = () => setPrice(!price);
 
   const data = Data.map((d, i) => (
-    <tr key={i}>
+    <tr key={i} className={i % 2 == 0 ? "menu__tr--color" : ""}>
       <td className="menu__td" key={d.nr}>
         {d.nr}
       </td>
@@ -33,10 +33,9 @@ const Menu = () => {
               <th></th>
               <th></th>
               <th></th>
-              <th>
-                {" "}
+              <th style={{ border: "none" }}>
                 <button className="menu__size--button" onClick={handlePrice}>
-                  30cm/40cm
+                  Zmień rozmiar
                 </button>
               </th>
             </tr>

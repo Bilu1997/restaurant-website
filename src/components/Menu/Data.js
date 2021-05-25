@@ -1,7 +1,7 @@
 const Data = [
   {
     nr: "1",
-    name: "Margerita",
+    name: "Ma123124214325325325rgerita",
     ingredients: "sos, ser",
     thirty: "25zł",
     fourty: "35zł",
