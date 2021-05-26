@@ -7,7 +7,7 @@ const Data = [
   },
   {
     name: "Capriciosa",
-    ingredients: "sos, ser,pieczarki, szynka",
+    ingredients: "sos, ser, pieczarki, szynka",
     thirty: "26zł",
     fourty: "36zł",
   },

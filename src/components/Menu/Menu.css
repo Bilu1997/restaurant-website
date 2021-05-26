@@ -1,13 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 .menu__container {
-  background: #fff;
   width: 100%;
-  color: #000;
+  background-image: url("../../images/menuBg.png");
+  background-size: cover;
+  color: #fff;
   padding-bottom: 40px;
+  position: relative;
+  font-family: "Big Shoulders Display", cursive;
+  overflow: hidden;
 }
 
 .menu__wrapper {
-  max-width: 1200px;
-  padding: 25px;
+  max-width: 1000px;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -18,39 +25,44 @@
   list-style: none;
   display: inline-block;
   width: 100%;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #fff;
   line-height: 1.6;
   overflow-wrap: break-word;
-  max-height: 600px;
+  max-height: 300px;
   padding-bottom: 8px;
+  z-index: 2;
 }
 
 .pizza__name {
   text-align: left;
   font-size: 2rem;
   text-align: center;
+  font-family: "Architects Daughter", cursive;
 }
 
 .pizza__ingredients {
-  color: #000;
+  color: #fff;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .pizza__thirty {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .pizza__fourty {
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .menu__title {
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
   padding: 20px 0px;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  z-index: 2;
 }

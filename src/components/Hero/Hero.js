@@ -4,7 +4,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <>
-      <div className="background__container">
+      <div className="background__container " alt="HeroImg">
         <div className="hero__wrapper">
           <h1 className="hero__h1">Pizzeria Kuchcik</h1>
           <p className="hero__p">
@@ -14,7 +14,7 @@ const Hero = () => {
             MENU
           </button>
         </div>
-        <img className="background__image" alt="HeroImg" />
+        <div className="background__image" />
       </div>
     </>
   );
