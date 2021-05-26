@@ -5,6 +5,7 @@ const Hero = () => {
   return (
     <>
       <div className="background__container " alt="HeroImg">
+        <div className="background__image" />
         <div className="hero__wrapper">
           <h1 className="hero__h1">Pizzeria Kuchcik</h1>
           <p className="hero__p">
@@ -14,7 +15,6 @@ const Hero = () => {
             MENU
           </button>
         </div>
-        <div className="background__image" />
       </div>
     </>
   );
