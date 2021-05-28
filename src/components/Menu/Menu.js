@@ -24,7 +24,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="menu__container">
+      <div className="menu__container" id="menu">
         <div className="menu__wrapper">
           <div className="menu__title">MENU</div>
           {data}

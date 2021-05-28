@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Hero.css";
 
 const Hero = () => {
@@ -11,9 +12,17 @@ const Hero = () => {
           <p className="hero__p">
             Z pasji do smacznej kuchni! Zapoznaj się z naszym menu!
           </p>
-          <button to="/menu" className="hero__button">
+          <Link
+            className="hero__button"
+            to="menu"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            delay={50}
+          >
             MENU
-          </button>
+          </Link>
         </div>
       </div>
     </>

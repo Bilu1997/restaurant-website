@@ -28,6 +28,7 @@ nav {
   color: #fff;
   font-size: 1.2rem;
   font-weight: 500;
+  cursor: pointer;
 }
 a:hover {
   text-shadow: 0 0 2px #fff;
@@ -54,6 +55,25 @@ a {
   justify-content: center;
   list-style: none;
 }
+
+.nav__logo {
+  max-width: 100%;
+  max-height: 74px;
+  padding-top: 3px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__logo {
+    align-items: left;
+    padding-left: 50px;
+  }
+  .logo__container {
+    width: 100%;
+  }
+}
+
 /*---------------------------Mobile menu-------------------------------*/
 
 .mobile__menu {
@@ -105,21 +125,4 @@ a {
 
 .mobile__icon:hover {
   color: #808080;
-}
-
-.nav__logo {
-  max-width: 100%;
-  max-height: 74px;
-  padding-top: 3px;
-  padding-right: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .nav__logo {
-    align-items: left;
-    padding-left: 50px;
-  }
-  .logo__container {
-    width: 100%;
-  }
 }

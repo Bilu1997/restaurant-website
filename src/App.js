@@ -1,21 +1,14 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar.js";
-import Hero from "./components/Hero/Hero";
-import Menu from "./components/Menu/Menu";
-import ImagesBar from "./components/ImagesBar/ImagesBar";
-import ShortInfoBar from "./components/ShortInfoBar/ShortInfoBar";
-import { BrowserRouter as Router } from "react-router-dom";
+import Home from "./pages/Home.js";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Hero />
-      <ShortInfoBar />
-      <ImagesBar />
-
-      <Menu />
+      <Switch>
+        <Route path="/" component={Home} exact />
+      </Switch>
     </Router>
   );
 }

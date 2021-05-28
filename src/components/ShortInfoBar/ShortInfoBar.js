@@ -4,7 +4,7 @@ import "./ShortInfoBar.css";
 const ShortInfoBar = () => {
   return (
     <>
-      <div className="short__container">
+      <div className="short__container" id="onas">
         <div className="short__wrapper">
           <h2 className="short__h2">Kuchcik</h2>
           <p className="short__p">

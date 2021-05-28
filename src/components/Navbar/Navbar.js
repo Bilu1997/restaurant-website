@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { Link, animateScroll as scroll } from "react-scroll";
+import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(!open);
@@ -16,6 +17,10 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeNavbarColor);
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <nav className={colorChange ? "navbar colorChange" : "navbar"}>
@@ -24,32 +29,59 @@ const Navbar = () => {
             src={require("../../images/logo.png").default}
             alt="logo"
             className="nav__logo"
+            onClick={scrollToTop}
           />
         </div>
         <div className="mobile__icon" onClick={handleClick}>
           {open ? <FaTimes /> : <FaBars />}
         </div>
         <ul className={open ? "mobile__menu" : "nav__menu"}>
-          <li>
-            <a className={open ? "nav__links--mobile" : "nav__links"} href="/">
-              O nas
-            </a>
-          </li>
-          <li>
-            <a className={open ? "nav__links--mobile" : "nav__links"} href="/">
-              Menu
-            </a>
-          </li>
-          <li>
-            <a className={open ? "nav__links--mobile" : "nav__links"} href="/">
-              Promocje
-            </a>
-          </li>
-          <li>
-            <a className={open ? "nav__links--mobile" : "nav__links"} href="/">
-              Kontakt
-            </a>
-          </li>
+          {/*<a className={open ? "nav__links--mobile" : "nav__links"} href="/"></a>*/}
+          <Link
+            className={open ? "nav__links--mobile" : "nav__links"}
+            to="onas"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            delay={50}
+          >
+            O nas
+          </Link>
+
+          <Link
+            className={open ? "nav__links--mobile" : "nav__links"}
+            to="menu"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            delay={50}
+          >
+            Menu
+          </Link>
+          <Link
+            className={open ? "nav__links--mobile" : "nav__links"}
+            to="dowoz"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            delay={50}
+          >
+            Dowóz
+          </Link>
+          <Link
+            className={open ? "nav__links--mobile" : "nav__links"}
+            to="kontakt"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            delay={50}
+          >
+            Kontakt
+          </Link>
         </ul>
       </nav>
     </>
