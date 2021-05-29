@@ -15,11 +15,7 @@
   object-fit: cover;
   max-height: 300px;
 }
-@media screen and (max-width: 1024px) {
-  .info__img {
-    max-height: 200px;
-  }
-}
+
 @media screen and (max-width: 1024px) {
   .img__left {
     flex: 1;

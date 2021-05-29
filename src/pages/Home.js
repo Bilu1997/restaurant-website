@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero";
 import Menu from "../components/Menu/Menu";
 import ImagesBar from "../components/ImagesBar/ImagesBar";
 import ShortInfoBar from "../components/ShortInfoBar/ShortInfoBar";
+import ShortContactBar from "../components/ShortContactBar/ShortContactBar.js";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <ShortInfoBar />
       <ImagesBar />
+      <ShortContactBar />
       <Menu />
     </>
   );
