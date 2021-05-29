@@ -24,6 +24,8 @@
   font-size: 1.2rem;
 }
 
+/*------------------MOBILE VIEW------------------*/
+
 @media screen and (max-width: 768px) {
   .contact__container {
     width: 100%;
@@ -35,5 +37,13 @@
 
   .card__container {
     padding: 18px 0px;
+    width: 100%;
+  }
+  .card__h1 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  .card__p {
+    font-size: 1.1rem;
   }
 }
