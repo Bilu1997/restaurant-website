@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo&display=swap");
+
+footer {
+  width: 100%;
+  background: #001427;
+  font-family: "KoHo", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer__wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "col col2 col3"
+    "copyrights copyrights socials";
+  padding: 10px;
+  text-align: center;
+}
+
+.footer__logo {
+  grid-area: col;
+  margin-top: 10px;
+}
+
+.footer__adres {
+  grid-area: col2;
+}
+
+.footer__contact {
+  grid-area: col3;
+}
+.footer__img {
+  width: 100px;
+}
+
+.footer__copyrights {
+  grid-area: copyrights;
+  padding-top: 8px;
+}
+
+.footer__socials {
+  grid-area: socials;
+  text-align: left;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.social__icon {
+  padding: 0px 4px;
+}
+
+/*---------------------MOBILE VIEW-----------------*/
+
+@media screen and (max-width: 480px) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__socials {
+    text-align: center;
+  }
+}
