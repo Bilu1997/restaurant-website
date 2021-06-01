@@ -65,6 +65,7 @@
 .menu__title {
   max-width: 1000px;
   display: flex;
+  flex-direction: column;
   border-bottom: 1px solid #fff;
   padding: 20px 0px;
   justify-content: center;
@@ -73,4 +74,9 @@
   letter-spacing: 4px;
   text-shadow: 0px 0px 10px rgb(185, 0, 0);
   z-index: 2;
+}
+
+.menu__h3 {
+  border: 3px solid #fff;
+  padding: 14px 24px;
 }

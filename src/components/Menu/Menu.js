@@ -1,11 +1,11 @@
 import React from "react";
 import "./Menu.css";
-import Data from "./Data";
+import { Data, Data2 } from "./Data";
 
 const Menu = () => {
   const data = Data.map((d, i) => (
     <ul className="menu__list" key={i}>
-      <li key={i.nr}>
+      <li>
         <div className="pizza__name" key={i.name}>
           {d.name}
         </div>
@@ -22,12 +22,36 @@ const Menu = () => {
     </ul>
   ));
 
+  const dataDrink = Data2.map((d, i) => (
+    <ul className="menu__list" key={i}>
+      <li>
+        <div className="pizza__name" key={i.name}>
+          {d.name}
+        </div>
+        <div className="pizza__ingredients" key={i.size}>
+          {d.size}
+        </div>
+        <div className="pizza__thirty" key={i.price}>
+          cena: {d.price}
+        </div>
+      </li>
+    </ul>
+  ));
+
   return (
     <>
       <div className="menu__container" id="menu">
         <div className="menu__wrapper">
-          <div className="menu__title">MENU</div>
+          <div className="menu__title">
+            <h2 className="menu__h2">MENU</h2>
+            <h3 className="menu__h3">Pizza</h3>
+          </div>
+
           {data}
+          <div className="menu__title">
+            <h3 className="menu__h3">Napoje</h3>
+          </div>
+          {dataDrink}
         </div>
       </div>
     </>

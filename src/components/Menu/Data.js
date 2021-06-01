@@ -1,4 +1,4 @@
-const Data = [
+export const Data = [
   {
     name: "Margerita",
     ingredients: "sos, ser",
@@ -63,4 +63,35 @@ const Data = [
   },
 ];
 
-export default Data;
+export const Data2 = [
+  {
+    name: "Coca-Cola",
+    size: "250ml",
+    price: "6zł",
+  },
+  {
+    name: "Fanta",
+    size: "250ml",
+    price: "6zł",
+  },
+  {
+    name: "Sprite",
+    size: "250ml",
+    price: "6zł",
+  },
+  {
+    name: "Kawa",
+    size: "250ml",
+    price: "7zł",
+  },
+  {
+    name: "Herbata",
+    size: "250ml",
+    price: "7zł",
+  },
+  {
+    name: "Piwo",
+    size: "250ml",
+    price: "8zł",
+  },
+];
