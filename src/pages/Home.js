@@ -6,6 +6,7 @@ import ImagesBar from "../components/ImagesBar/ImagesBar";
 import ShortInfoBar from "../components/ShortInfoBar/ShortInfoBar";
 import ShortContactBar from "../components/ShortContactBar/ShortContactBar.js";
 import Footer from "../components/Footer/Footer.js";
+import Promotions from "../components/Promotions/Promotions.js";
 const Home = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Home = () => {
       <ImagesBar />
       <ShortContactBar />
       <Menu />
+      <Promotions />
       <Footer />
     </>
   );

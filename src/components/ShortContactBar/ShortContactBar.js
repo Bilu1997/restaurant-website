@@ -5,7 +5,7 @@ import { RiPhoneFill, RiMapPin2Fill, RiTimer2Fill } from "react-icons/ri";
 const ShortContactBar = () => {
   return (
     <>
-      <div className="contact__container">
+      <div className="contact__container" id="kontakt">
         <div className="card__container card__left">
           <RiPhoneFill className="card__icon" />
           <h1 className="card__h1">Zadzwoń do nas</h1>
