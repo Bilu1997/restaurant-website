@@ -41,6 +41,10 @@ const Menu = () => {
   return (
     <>
       <div className="menu__container" id="menu">
+        <img
+          className="background__left"
+          src={require("../../images/menu-2.png").default}
+        />
         <div className="menu__wrapper">
           <div className="menu__title">
             <h2 className="menu__h2">MENU</h2>
@@ -53,6 +57,10 @@ const Menu = () => {
           </div>
           {dataDrink}
         </div>
+        <img
+          className="background__right"
+          src={require("../../images/menu-1.png").default}
+        />
       </div>
     </>
   );
