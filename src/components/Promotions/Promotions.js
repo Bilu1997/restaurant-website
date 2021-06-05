@@ -10,6 +10,7 @@ const Promotions = () => {
             <img
               src={require("../../images/delivery.svg").default}
               className="promo__img"
+              alt="promo-one"
             />
           </div>
           <div className="column__right">
@@ -30,6 +31,7 @@ const Promotions = () => {
             <img
               src={require("../../images/pizza.svg").default}
               className="promo__img"
+              alt="promo-2"
             />
           </div>
         </div>

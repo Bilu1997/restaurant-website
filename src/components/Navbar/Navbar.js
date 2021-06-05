@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleClick = () => setOpen(!open);

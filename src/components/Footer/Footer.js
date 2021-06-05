@@ -11,6 +11,7 @@ const Footer = () => {
             <img
               src={require("../../images/logo.png").default}
               className="footer__img"
+              alt="logo"
             />
           </div>
           <div className="footer__adres">

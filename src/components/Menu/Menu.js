@@ -44,6 +44,7 @@ const Menu = () => {
         <img
           className="background__left"
           src={require("../../images/menu-2.png").default}
+          alt="menu-2"
         />
         <div className="menu__wrapper">
           <div className="menu__title">
@@ -60,6 +61,7 @@ const Menu = () => {
         <img
           className="background__right"
           src={require("../../images/menu-1.png").default}
+          alt="menu-1"
         />
       </div>
     </>
