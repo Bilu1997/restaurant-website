@@ -15,7 +15,7 @@ footer {
   display: grid;
   grid-template-areas:
     "col col2 col3"
-    "copyrights copyrights socials";
+    "empty copyrights socials";
   padding: 10px;
   text-align: center;
 }
@@ -44,7 +44,7 @@ footer {
 
 .footer__socials {
   grid-area: socials;
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   cursor: pointer;
 }
