@@ -1,5 +1,6 @@
 # Restaurant website
-Here is a link to check how it works: https://kuchcikpizzeria.000webhostapp.com/
+
+Here is a link to check how it works: https://kuchcik.000webhostapp.com/
 
 # Getting Started with Create React App
 

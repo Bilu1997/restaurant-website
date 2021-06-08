@@ -14,9 +14,9 @@ const Promotions = () => {
             />
           </div>
           <div className="column__right">
-            <h2 className="promo__header">Przy zamówienia powyżej 50zł</h2>
+            <h2 className="promo__header">Przy zamówieniach powyżej 50zł</h2>
             <p className="promo__text">
-              Darmowa dostawa na terenie Gdańsk Śródmieście
+              Darmowa dostawa na terenie Gdańsk-Śródmieście
               <br />
               Pepsi 850ml GRATIS
             </p>

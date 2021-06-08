@@ -51,17 +51,6 @@ const Navbar = () => {
 
           <Link
             className={open ? "nav__links--mobile" : "nav__links"}
-            to="menu"
-            spy={true}
-            smooth={true}
-            offset={-80}
-            duration={500}
-            delay={50}
-          >
-            Menu
-          </Link>
-          <Link
-            className={open ? "nav__links--mobile" : "nav__links"}
             to="kontakt"
             spy={true}
             smooth={true}
@@ -71,6 +60,19 @@ const Navbar = () => {
           >
             Kontakt
           </Link>
+
+          <Link
+            className={open ? "nav__links--mobile" : "nav__links"}
+            to="menu"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            delay={50}
+          >
+            Menu
+          </Link>
+
           <Link
             className={open ? "nav__links--mobile" : "nav__links"}
             to="promo"

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap");
 
 .menu__container {
   width: 100%;
@@ -7,7 +8,7 @@
   background: #f8f8f8;
   padding-bottom: 40px;
   position: relative;
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Stint Ultra Condensed", cursive;
   overflow: hidden;
 }
 
@@ -78,7 +79,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 15%;
+  filter: opacity(22%);
   width: 800px;
 }
 
@@ -86,7 +87,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  opacity: 15%;
+  filter: opacity(22%);
   width: 800px;
 }
 
@@ -99,11 +100,20 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .background__left {
-    width: 300px;
+    width: 400px;
   }
   .background__right {
-    width: 300px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .background__left {
+    width: 270px;
+  }
+  .background__right {
+    width: 270px;
   }
 }

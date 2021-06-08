@@ -8,10 +8,10 @@ const ShortInfoBar = () => {
         <div className="short__wrapper">
           <h2 className="short__h2">Kuchcik</h2>
           <p className="short__p">
-            Pizzeria Kuchcik to miejsce, kótre łaczy w sobie nowoczęsną
-            elegancję z domową atmosferą. To doskonałem miejsce na relaks po
+            Pizzeria Kuchcik to miejsce, które łaczy w sobie nowoczesną
+            elegancję z domową atmosferą. To doskonałe miejsce na relaks po
             całym dniu pracy. Nasze produkty są zawsze świeże, a lokalne
-            produkty są naszą domeną. Pizza, która robimy wyróżnia się
+            produkty są naszą domeną. Pizza, którą robimy wyróżnia się
             wspaniałym smakiem, dużą ilością składników, a także wysoką
             jakością.
           </p>

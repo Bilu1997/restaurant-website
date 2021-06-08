@@ -29,10 +29,10 @@ const Menu = () => {
           {d.name}
         </div>
         <div className="pizza__ingredients" key={i.size}>
-          {d.size}
+          {d.size} - {d.price}
         </div>
         <div className="pizza__thirty" key={i.price}>
-          cena: {d.price}
+          {d.sizeTwo} - {d.priceTwo}
         </div>
       </li>
     </ul>

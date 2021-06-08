@@ -23,6 +23,7 @@ footer {
 .footer__logo {
   grid-area: col;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .footer__adres {
@@ -51,6 +52,10 @@ footer {
 
 .social__icon {
   padding: 0px 4px;
+}
+
+.footer__link {
+  color: #fff;
 }
 
 /*---------------------MOBILE VIEW-----------------*/

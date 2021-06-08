@@ -1,8 +1,14 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <footer>
@@ -12,6 +18,7 @@ const Footer = () => {
               src={require("../../images/logo.png").default}
               className="footer__img"
               alt="logo"
+              onClick={scrollToTop}
             />
           </div>
           <div className="footer__adres">
@@ -38,8 +45,32 @@ const Footer = () => {
             </small>
           </div>
           <div className="footer__socials">
-            <FaFacebook className="social__icon" />
-            <FaInstagram className="social__icon" />
+            <Link
+              to="//www.facebook.com"
+              target="_blank"
+              aria-label="facebook"
+              className="footer__link"
+            >
+              <FaFacebook className="social__icon" />
+            </Link>
+
+            <Link
+              to="//www.instagram.com"
+              target="_blank"
+              aria-label="instagram"
+              className="footer__link"
+            >
+              <FaInstagram className="social__icon" />
+            </Link>
+
+            <Link
+              to="//www.twitter.com"
+              target="_blank"
+              aria-label="instagram"
+              className="footer__link"
+            >
+              <FaTwitter className="social__icon" />
+            </Link>
           </div>
         </div>
       </footer>
